@@ -1,5 +1,5 @@
 {
-    "name": "damienmoulard/payum-payzen",
+    "name": "ekyna/payum-payzen",
     "description": "PayZen Payum gateway",
     "type": "component",
     "authors": [
@@ -12,7 +12,7 @@
         "payum",
         "payzen"
     ],
-    "homepage": "https://github.com/damienmoulard/PayumPayzen",
+    "homepage": "https://github.com/ekyna/PayumPayzen",
     "license": [
         "MIT"
     ],
