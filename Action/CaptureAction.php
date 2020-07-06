@@ -54,11 +54,8 @@ class CaptureAction implements ActionInterface, GatewayAwareInterface, GenericTo
 
             // Notify url
             if (empty($model['vads_url_check']) && $this->tokenFactory) {
-                $notifyToken = $this->tokenFactory->createNotifyToken(
-                    $request->getToken()->getGatewayName(),
-                    $request->getToken()->getDetails()
-                );
-                $model['vads_url_check'] = $notifyToken->getTargetUrl();
+                // Custom action
+                $model['vads_url_check'] = $request->getToken()->getAfterUrl();
             }
         }
 
